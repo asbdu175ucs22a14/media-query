@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 200px 200px;
+        column-gap: 0.5cm;
+        row-gap: 0.5cm;
+        grid-template-areas:
+          "l h h"
+          "a a a"
+          "a a a"
+          "c1 c2 c3";
+      }
+
+      .box1 {
+        grid-area: l;
+        background-color: green;
+        font-size: 50px;
+        font-weight: 400;
+      }
+
+      .box2 {
+        grid-area: h;
+        background-color: burlywood;
+        font-size: 50px;
+        font-weight: 400;
+      }
+
+      .box3 {
+        grid-area: a;
+        background-color: green;
+      }
+
+      .box4 {
+        grid-area: c1;
+        background-color: burlywood;
+      }
+
+      .box5 {
+        grid-area: c2;
+        background-color: burlywood;
+      }
+
+      .box6 {
+        grid-area: c3;
+        background-color: burlywood;
+      }
+      @media (orientation: portrait) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="border: 2px solid black" class="box1"></div>
+      <div style="border: 2px solid black" class="box2"></div>
+
+      <div style="border: 2px solid black" class="box3"></div>
+      <div style="border: 2px solid black" class="box4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+        vitae omnis, ex inventore enim dolor amet pariatur, quam asperiores
+        earum cupiditate eum nisi dolores quisquam vel, quas saepe odio
+      </div>
+      <div style="border: 2px solid black" class="box5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit porro
+        sequi fugit, nesciunt neque accusantium vitae quos quaerat atque,
+        laboriosam veritatis exercitationem, in omnis ipsam architecto minima
+      </div>
+      <div style="border: 2px solid black" class="box6">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quis quo
+        accusantium obcaecati qui odit facere, molestiae quasi doloribus,
+        nostrum est laudantium totam in libero velit cumque
+      </div>
+    </div>
+  </body>
+</html>
